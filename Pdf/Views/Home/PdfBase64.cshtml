@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "PdfBase64";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>PdfBase64</h2>
+
+<button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("DownloadPdf", "Home")'"> Download </button>
+<hr />
+    <div class="limiteTexto">
+        @Session["base64"]
+    </div>
+
+
